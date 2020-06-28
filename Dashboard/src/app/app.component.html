@@ -5,11 +5,13 @@
   <div class="row" id="mainContent">
     <app-sidebar
       id="sidebar"
-      class="col-sm-3 col-md-2 d-none d-sm-block sidebar"
-    >
+      class="col-sm-3 col-md-2 d-none d-sm-block sidebar">
     </app-sidebar>
     <div id="dashboard" class="col-sm-9 dashboard">
-      <p>content goes here</p>
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>
+<app-section-footer id='footer' class='footer-nav fixed-bottom bg-dark'></app-section-footer>
+
+
